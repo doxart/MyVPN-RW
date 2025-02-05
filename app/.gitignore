@@ -15,3 +15,4 @@ private_key.pepk
 .externalNativeBuild
 .cxx
 local.properties
+/private_key.pepk
