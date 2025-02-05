@@ -5,6 +5,7 @@ public class Config {
     public static String IRONSOURCE_AD_ID = "REPLACE_IRONSOURCE_AD_ID";
 
     public static String INTERSTITIAL_AD_ID = "REPLACE_INTERSTITIAL_AD_ID";
+    public static String INTERSTITIAL_AD_PLACEMENT_ID = "REPLACE_INTERSTITIAL_PLACEMENT_AD_ID";
 
     public static String NATIVE_AD_ID = "REPLACE_NATIVE_AD_ID";
 

@@ -473,13 +473,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void showConnectAd() {
         if (mConnectAd.isAdReady() & !SharePrefs.getInstance(this).isPremium()) {
-            mConnectAd.showAd(this, "Home_Screen");
+            mConnectAd.showAd(this, Config.INTERSTITIAL_AD_PLACEMENT_ID);
         } else vpnBtnOnClickListener();
     }
 
     public void showInterstitialAd() {
         if (mConnectAd.isAdReady() & !SharePrefs.getInstance(this).isPremium()) {
-            mConnectAd.showAd(this, "Home_Screen");
+            mConnectAd.showAd(this, Config.INTERSTITIAL_AD_PLACEMENT_ID);
         }
     }
 
