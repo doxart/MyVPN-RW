@@ -1,4 +1,4 @@
-![badge](https://flat.badgen.net/badge/MyVPN/Still%20in%20development/red) ![badge](https://flat.badgen.net/badge/License/Free/green)
+![badge](https://flat.badgen.net/badge/DoxyVPN/Download%20Now/blue) ![badge](https://flat.badgen.net/badge/License/Free/green)
 
 ## My VPN
 
