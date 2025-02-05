@@ -54,17 +54,17 @@ To enhance the capabilities of this VPN app, we have integrated Firebase, a comp
      ```
 
 5. **Use Firestore in the Project**:
-   - This project uses Firestore to manage server configurations. You can find the code related to Firestore in [this file](https://github.com/doxart/MyVPN/blob/master/firestore-collection-template.json). You need to create Firestore documents like that if you want to change it (collection id, document fields e.g..) you need to change codes inside of app. 
+   - This project uses Firestore to manage server configurations. You can find the code related to Firestore in [this file](https://github.com/doxart/MyVPN-RW/blob/main/firestore-collection-template.json). You need to create Firestore documents like that if you want to change it (collection id, document fields e.g..) you need to change codes inside of app. 
 
 6. **Enable Remote Config**:
    - In the Firebase Console, navigate to the "Remote Config" section.
    - Click on "Get Started" and follow the on-screen instructions to set up Remote Config for your project.
 
 7. **Add Default Parameters**:
-   - To get started, upload [this file](https://github.com/doxart/MyVPN/blob/master/remote_config_ivpn.json) to Remote Config.
+   - To get started, upload [this file](https://github.com/doxart/MyVPN-RW/blob/main/remote_config_myvpn.json) to Remote Config.
 
 8. **Optional**:
-   - The app have Revenuecat, IronSource e.g you can find the [this Config.java file](https://github.com/doxart/MyVPN/blob/master/remote_config_ivpn.json) and change the id's.
+   - The app have Revenuecat, IronSource e.g you can find the [this Config.java file](https://github.com/doxart/MyVPN-RW/blob/main/app/src/main/java/com/doxart/myvpn/Util/Config.java) and change the id's.
 
 11. **You're All Set!**:
    - With Firebase integration, you can easily manage server configurations and other data for the VPN app.
