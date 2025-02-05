@@ -64,7 +64,7 @@ To enhance the capabilities of this VPN app, we have integrated Firebase, a comp
    - To get started, upload [this file](https://github.com/doxart/MyVPN-RW/blob/main/remote_config_myvpn.json) to Remote Config.
 
 8. **Optional**:
-   - The app have Revenuecat, IronSource e.g you can find the [this Config.java file](https://github.com/doxart/MyVPN-RW/blob/main/app/src/main/java/com/doxart/myvpn/Util/Config.java) and change the id's.
+   - The app have Revenuecat, IronSource e.g you can find the [Config.java](https://github.com/doxart/MyVPN-RW/blob/main/app/src/main/java/com/doxart/myvpn/Util/Config.java) file and change the id's and if you want change the default setup.
 
 11. **You're All Set!**:
    - With Firebase integration, you can easily manage server configurations and other data for the VPN app.
