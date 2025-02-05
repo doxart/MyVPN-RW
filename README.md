@@ -56,8 +56,6 @@ To enhance the capabilities of this VPN app, we have integrated Firebase, a comp
 5. **Use Firestore in the Project**:
    - This project uses Firestore to manage server configurations. You can find the code related to Firestore in [this file](https://github.com/doxart/MyVPN/blob/master/firestore-collection-template.json). You need to create Firestore documents like that if you want to change it (collection id, document fields e.g..) you need to change codes inside of app. 
 
-     ![Document template](https://github.com/doxart/MyVPN/blob/master/firestore-document-template.png)   
-
 6. **Enable Remote Config**:
    - In the Firebase Console, navigate to the "Remote Config" section.
    - Click on "Get Started" and follow the on-screen instructions to set up Remote Config for your project.
@@ -65,57 +63,8 @@ To enhance the capabilities of this VPN app, we have integrated Firebase, a comp
 7. **Add Default Parameters**:
    - To get started, upload [this file](https://github.com/doxart/MyVPN/blob/master/remote_config_ivpn.json) to Remote Config.
 
-8. **Add Google AdMob (Optional)**:
-   - Create AdMob interstitial, rewarded and banner ads
-   - Enter the ad IDs in the field specified [strings.xml](https://github.com/doxart/MyVPN/blob/master/app/src/main/res/values/strings.xml) file.
-     ```xml
-     <resources
-          <string name="admob_id" translatable="false">Insert your Admob App ID</string>
-     
-          <string name="banner_id">Insert your banner Ad ID</string>
-          <string name="rewarded_id">Insert your rewarded Ad ID</string>
-          <string name="interstitial_id">Insert your interstitial Ad ID</string>
-     </resources>
-     ```
-   - Create Application class to app.
-     ```java
-     public class MyApplication extends Application {
-     @Override
-     public void onCreate() {
-        super.onCreate();
-
-        MobileAds.initialize(this);
-      }
-     }
-     ```
-
-8. **Add Adapty Paywall SDK (Optional)**:
-   - Create Adapty account and follow documentation about installing app.
-   - Visit the [Adapty](https://docs.adapty.io/docs/what-is-adapty).
-   - Create Application class to app.
-     ```java
-     public class MyApplication extends Application {
-     @Override
-     public void onCreate() {
-        super.onCreate();
-
-        MobileAds.initialize(this);
-        Adapty.activate(this, "Insert your Adapty App Key", false);
-     }
-     }
-     ```
-   - And add app class in your [AndroidManifest.xml](https://github.com/doxart/MyVPN/blob/master/app/src/main/AndroidManifest.xml).
-     ```xml
-     <application
-          android:name=".MyApplication"
-     </application>
-     ```
-   - Enter the placement ID in the field specified [strings.xml](https://github.com/doxart/MyVPN/blob/master/app/src/main/res/values/strings.xml) file.
-      ```xml
-     <resources
-          <string name="adapty_placement_id">Insert your Adapty Placement ID</string>
-     </resources>
-     ```
+8. **Optional**:
+   - The app have Revenuecat, IronSource e.g you can find the [this Config.java file](https://github.com/doxart/MyVPN/blob/master/remote_config_ivpn.json) and change the id's.
 
 11. **You're All Set!**:
    - With Firebase integration, you can easily manage server configurations and other data for the VPN app.
