@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Doxy VPN</string>
+    <string name="app_name" translatable="false">MyVPN</string>
 
     <string name="connecting">Connecting</string>
     <string name="image">image</string>

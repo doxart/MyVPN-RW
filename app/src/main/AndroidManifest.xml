@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:name=".DoxyVPN"
+        android:name=".MyVPN"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:exported="false"

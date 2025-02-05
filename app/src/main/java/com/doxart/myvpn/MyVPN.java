@@ -21,7 +21,7 @@ import com.unity3d.mediation.LevelPlayInitRequest;
 import java.util.List;
 
 
-public class DoxyVPN extends MultiDexApplication {
+public class MyVPN extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
