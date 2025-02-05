@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorPrimaryDark"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.ExtraSmall"
+            android:id="@+id/cFlagImg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/plat"
+            android:id="@+id/cCountryTxt"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_toStartOf="@id/cMoreBt"
+            android:layout_toEndOf="@id/cFlagImg"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_keyboard_arrow_down_24"
+            android:layout_alignParentEnd="true"
+            app:contentPadding="4dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/cMoreBt"
+            app:tint="@color/blat1"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:id="@+id/vpnRecycler"
+        android:visibility="gone"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</LinearLayout>

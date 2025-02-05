@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/plat"
+        android:id="@+id/cCountryTxt"
+        android:textSize="14dp"
+        android:layout_toStartOf="@id/signalLay"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/signalLay"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp"
+        android:gravity="center|bottom">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="3dp"
+            android:layout_height="8dp"
+            app:cardCornerRadius="1.5dp"
+            app:cardElevation="0dp"
+            android:id="@+id/s1"
+            app:cardBackgroundColor="@color/colorPrimaryDark"/>
+
+        <Space
+            android:layout_width="7dp"
+            android:layout_height="match_parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="3dp"
+            android:layout_height="12dp"
+            app:cardElevation="0dp"
+            android:id="@+id/s2"
+            app:cardCornerRadius="1.5dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"/>
+
+        <Space
+            android:layout_width="7dp"
+            android:layout_height="match_parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="3dp"
+            android:layout_height="16dp"
+            app:cardCornerRadius="1.5dp"
+            android:id="@+id/s3"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

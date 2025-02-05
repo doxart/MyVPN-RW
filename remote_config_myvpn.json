@@ -1,0 +1,61 @@
+{
+  "parameters": {
+    "fetchVPNGate": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "valueType": "BOOLEAN"
+    },
+    "showPaywall": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "valueType": "BOOLEAN"
+    },
+    "showBannerAds": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "valueType": "BOOLEAN"
+    },
+    "paywallDiscountItem": {
+      "defaultValue": {
+        "value": "2"
+      },
+      "valueType": "NUMBER"
+    },
+    "showSpecialPaywall": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "valueType": "BOOLEAN"
+    },
+    "showIAds": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "valueType": "BOOLEAN"
+    },
+    "paywallItem": {
+      "defaultValue": {
+        "value": "2"
+      },
+      "valueType": "NUMBER"
+    },
+    "paywallDelay": {
+      "defaultValue": {
+        "value": "3000"
+      },
+      "valueType": "NUMBER"
+    }
+  },
+  "version": {
+    "versionNumber": "64",
+    "updateTime": "2025-02-05T08:53:01.521013Z",
+    "updateUser": {
+      "email": "gokdeniz.gs41@gmail.com"
+    },
+    "updateOrigin": "CONSOLE",
+    "updateType": "INCREMENTAL_UPDATE"
+  }
+}

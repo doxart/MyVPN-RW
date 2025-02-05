@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaults>
+  <entry>
+    <key>fetchVPNGate</key>
+    <value>true</value>
+  </entry>
+  <entry>
+    <key>showPaywall</key>
+    <value>true</value>
+  </entry>
+  <entry>
+    <key>showBannerAds</key>
+    <value>true</value>
+  </entry>
+  <entry>
+    <key>paywallDiscountItem</key>
+    <value>2</value>
+  </entry>
+  <entry>
+    <key>showSpecialPaywall</key>
+    <value>true</value>
+  </entry>
+  <entry>
+    <key>showIAds</key>
+    <value>true</value>
+  </entry>
+  <entry>
+    <key>paywallItem</key>
+    <value>2</value>
+  </entry>
+  <entry>
+    <key>paywallDelay</key>
+    <value>3000</value>
+  </entry>
+</defaults>

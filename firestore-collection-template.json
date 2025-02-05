@@ -1,0 +1,17 @@
+{
+  "collections":{
+    "servers":[
+      {
+        "active":true,
+        "country":"OpenVPN Country",
+        "countryId":"OpenVPN Country Id e.g tr, en, de",
+        "ip":"OpenVPN Server IP",
+        "ovpnUsername":"OpenVPN username",
+        "ovpnPassword":"OpenVPN password",
+        "ping":0,
+        "hostName":"OpenVPN Server Hostname",
+        "ovpnConfig":"OpenVPN config text"
+      }
+    ]
+  }
+}

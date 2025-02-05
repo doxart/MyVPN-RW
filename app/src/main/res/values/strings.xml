@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name" translatable="false">Doxy VPN</string>
+
+    <string name="connecting">Connecting</string>
+    <string name="image">image</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="tap_to_connect">Tap to connect</string>
+    <string name="connected">Connected</string>
+    <string name="try_different_server">Try different server</string>
+    <string name="loading">Loading..</string>
+    <string name="invalid_device">Invalid Device</string>
+    <string name="authenticating">Authenticating</string>
+    <string name="settings">Settings</string>
+    <string name="starting">Starting</string>
+    <string name="vpn_is_running">VPN is running. Please stop VPN first.</string>
+    <string name="launch_phase_0">Checking internet connection…</string>
+    <string name="launch_phase_1">Bringing up settings…</string>
+    <string name="launch_phase_2">Receiving remote configuration…</string>
+    <string name="launch_phase_3">Accessing the servers…</string>
+    <string name="launch_phase_4">Checking your subscription…</string>
+    <string name="launch_phase_5">Done</string>
+    <string name="premium">Premium</string>
+    <string name="basic">Basic</string>
+    <string name="location">Location</string>
+    <string name="search_location">Search Location</string>
+    <string name="statistics">Statistics</string>
+    <string name="icon">icon</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="later">Later</string>
+    <string name="no_connection">No Connection</string>
+    <string name="no_connection_detail">You have no Internet connection. Please check your connections and try again.</string>
+    <string name="go_network_settings">Go Network Settings</string>
+    <string name="try_again">Try Again</string>
+    <string name="exit">Exit to App</string>
+    <string name="no_statistics_found_start_the_vpn_now">No statistics found. Start the VPN now!</string>
+    <string name="lng_d" translatable="false">Lng: %s</string>
+    <string name="lat_d" translatable="false">Lat: %s</string>
+    <string name="region">Region</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="speed_test">Speed Test</string>
+    <string name="latency">Latency</string>
+    <string name="start">Start</string>
+    <string name="server">Server</string>
+    <string name="time">Time</string>
+    <string name="connection_successful">Connection successful</string>
+    <string name="connection_report">Connection report</string>
+    <string name="rating_text">Do you like our free VPN app?\nGive us rating.</string>
+    <string name="share_with_your_friends">Share with your friends</string>
+    <string name="limitless_fast_secure"><![CDATA[Limitless, fast & secure]]></string>
+    <string name="share">Share</string>
+    <string name="ip" translatable="false">IP</string>
+    <string name="refresh">Refresh</string>
+    <string name="disconnecting">Disconnecting</string>
+    <string name="tap_to_start">Tap to Start</string>
+    <string name="app_have_update">New Update Available</string>
+    <string name="app_have_update_1">We added some features, fixes and some optimizations. We recommend you to download new update.</string>
+    <string name="update">Update Now!</string>
+    <string name="reward_coins">Watch One Ad, Get 3 Dox!</string>
+    <string name="reward_coins_info">Ready for fast VPN access? Just watch one ad and instantly earn 3 coins. 🚀💰</string>
+    <string name="watch_now">Watch Now!</string>
+    <string name="no_thanks">No, Thanks.</string>
+    <string name="login_ask">Unlock Fast VPN Access! Log In for Exclusive Rewards!</string>
+    <string name="login_ask_info">Hey DoxyVPN user! Ready to boost your experience? Watch an ad to earn coins, log in for bonus rewards, and stay connected with our VPN to keep earning! Don\'t miss out seize the opportunity to earn coins anytime, anywhere, and enjoy the perks! 🚀💰</string>
+    <string name="please_try_again_later">Please try again later.</string>
+    <string name="doxart" translatable="false">Doxart</string>
+
+    <string name="update_info"><![CDATA[
+        Dear <b>Doxy VPN Users</b>,<br><br>
+
+        We would like to inform you about the latest update to the Doxy VPN application, released on 27.11.2023. With this recent update, our primary focus has been on enhancing the performance and user experience of our application.<br><br>
+
+        Throughout the update process, no issues were identified during the testing stages. However, due to the diverse nature of the Android ecosystem, we have addressed and resolved some issues that were reported by our users. Thanks to the updates implemented thus far, <b>91.65%</b> of our users are currently enjoying a flawless and seamless experience with our application.<br><br>
+
+        Our goal is to achieve a <b>100%</b> satisfaction rate with the upcoming updates. We highly value the feedback from our esteemed users and continuously strive to improve our application based on your input.<br><br>
+
+        <b>New Features in the upcoming Version 2.0:</b><br><br>
+
+        - We have added a virtual currency called <b>Dox Coin</b> to the application.<br><br>
+        - The virtual currency will be mined when activated within the application.<br><br>
+        - Your mining speed will increase when connected to the VPN.<br><br>
+        - You will earn coins every day you log in to the application.<br><br>
+        - After a certain period, when the required quantities are reached, the coins will convert to real virtual currency equivalent to real money.<br><br>
+        - You can use this virtual currency to access premium servers.<br><br>
+
+        <i>This update has been designed to make the Doxy VPN application more user-friendly and reliable. Thanks to the valuable feedback from our users, we are continuously working to enhance and improve our application.</i><br><br>
+
+        Thank you for your ongoing support.<br><br>
+
+        Best regards,<br><br>
+
+        <b>The Doxart Team</b>
+    ]]></string>
+
+    <string name="you_haven_t_logged_in_yet">You haven\'t logged in yet</string>
+    <string name="log_in_with_google_now">Log in with Google now</string>
+    <string name="free">Free</string>
+    <string name="token_s">Token\'s</string>
+    <string name="balance">Balance</string>
+    <string name="mining_disabled">MinerBot Disabled</string>
+    <string name="mining_enabled">MinerBot Enabled</string>
+    <string name="miner_bot">MinerBot</string>
+    <string name="about">About</string>
+    <string name="visit_us">Visit Us</string>
+    <string name="follow_us">Follow Us</string>
+    <string name="report">Report a Bug</string>
+    <string name="features">Features</string>
+    <string name="wallet">Wallet</string>
+    <string name="you_dont_have_enough_token">You don\'t have enough token</string>
+    <string name="you_dont_have_enough_token_1">Upgrade to Premium or watch an award-winning video now and access fast servers with your tokens.</string>
+    <string name="get_premium">Get Premium</string>
+    <string name="please_wait_1_h">Please wait 1 hour for reward</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_net_not_safe">Your internet not safe</string>
+    <string name="you_are_safe">You are safe</string>
+    <string name="no_active_subscription_found">You have\'nt active subscription.</string>
+    <string name="something_went_wrong_please_try_again">Something went wrong. Please try again.</string>
+
+    <string name="yearly_sub_format">For only %2s per year</string>
+    <string name="monthly_sub_format">For only %2s per month</string>
+    <string name="weekly_sub_format">For only %2s per week</string>
+    <string name="weekly_sub_offer_format">%2s now, %3s later</string>
+
+</resources>

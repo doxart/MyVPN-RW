@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Activities.MainActivity">
+
+    <org.osmdroid.views.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/mapView"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/countryLay">
+
+        <include
+            layout="@layout/app_bar_main"
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appbar"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/pulseView"
+                android:layout_centerInParent="true"
+                android:layout_width="156dp"
+                android:layout_height="156dp"
+                android:visibility="invisible"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+                android:background="@color/white_alpha"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blat"
+                android:layout_marginHorizontal="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:textSize="18dp"
+                android:id="@+id/myIpTxt"
+                android:background="@drawable/full_corner_background"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="5dp"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="128dp"
+                android:layout_height="96dp"
+                android:id="@+id/vpnBtn"
+                app:strokeWidth="6dp"
+                app:strokeColor="@color/primary"
+                android:padding="3dp"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+                android:background="@color/colorPrimary"
+                app:contentPadding="24dp"
+                android:layout_centerInParent="true"
+                app:tint="@color/colorWhite"
+                android:src="@drawable/ic_power_24"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center|top"
+                android:orientation="vertical"
+                android:layout_below="@id/vpnBtn">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/full_corner_background"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:gravity="center|start">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        app:shapeAppearance="@style/ShapeAppearance.M3.Sys.Shape.Corner.Custom"
+                        android:background="@color/red"
+                        android:id="@+id/safityIcon"
+                        app:contentPadding="4dp"
+                        android:src="@drawable/ic_security_24"
+                        app:tint="@color/colorWhite"/>
+
+                    <io.supercharge.shimmerlayout.ShimmerLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:shimmer_animation_duration="2500"
+                        android:id="@+id/safityShimmer">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/safityTxt"
+                            android:text="@string/your_net_not_safe"
+                            android:textSize="12dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="10dp"/>
+
+                    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vpnStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tap_to_connect"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/durationTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/country_view_new"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/buttonsScroll"
+        android:id="@+id/countryLay"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonsScroll"
+        android:fillViewport="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:background="@drawable/full_corner_background"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginStart="20dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:id="@+id/speedTestLay"
+                android:gravity="center|start"
+                android:clipToPadding="false">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="48dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_gauge_24"
+                    android:background="#FF0550"
+                    app:tint="@color/colorWhite"
+                    app:contentPadding="8dp"
+                    app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/speed_test"
+                    android:layout_marginStart="10dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/ic_arrow_right_24"
+                    app:drawableTint="@color/plat2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/full_corner_background"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:id="@+id/locationLay"
+                android:gravity="center|start"
+                android:clipToPadding="false">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="48dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_location_pin_24"
+                    android:background="#5E07FF"
+                    app:tint="@color/colorWhite"
+                    app:contentPadding="8dp"
+                    app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/location"
+                    android:layout_marginStart="10dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/ic_arrow_right_24"
+                    app:drawableTint="@color/plat2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

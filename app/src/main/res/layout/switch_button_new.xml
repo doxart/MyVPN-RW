@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:padding="10dp"
+    android:clipToPadding="false">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="128dp"
+        android:layout_height="96dp"
+        android:id="@+id/switchBtn"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/primary"
+        android:padding="1dp"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+        android:background="@color/colorPrimary"
+        app:contentPadding="24dp"
+        app:tint="@color/colorWhite"
+        android:src="@drawable/ic_power_24"/>
+
+</RelativeLayout>
