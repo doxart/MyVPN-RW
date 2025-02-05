@@ -66,7 +66,6 @@ dependencies {
     implementation("com.google.firebase:firebase-messaging:24.1.0")
 
     implementation("com.google.android.gms:play-services-auth:21.3.0")
-    implementation("com.google.android.gms:play-services-ads:23.6.0")
 
     implementation ("io.supercharge:shimmerlayout:2.1.0")
 
